@@ -1,0 +1,78 @@
+ * {
+         box-sizing: border-box;
+      }
+   
+             main {
+         flex: 1 0 auto;
+      }
+      .contact{
+         padding:10px;
+         width:40%;
+         
+       }
+      footer {
+         color: #fff;
+         background: #333;
+         position: absolute; /* required to position the copyright at the bottom */
+       
+         width: 100%;
+         
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 20%;
+         background: #111;
+         /* positions the copyright at the bottom of the footer */
+         padding: 2%;
+         position: absolute;
+         bottom: 0%;
+         left: 0px;
+      }
+      .footer-body {
+         margin-bottom: 40px;
+      }
+      /* the clearfix hack */
+      .footer-body::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding: 10px;
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 15px;
+         width: 35%;
+         text-align: center;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+      .footer-body ul {
+         list-style-type: none;
+         margin: 0px;
+         padding: 0px;
+         text-align: center;
+      }
+      .footer-body > li > a {
+         color: white;
+         text-decoration: none;
+         margin-bottom: 12px;
+         font-size: 15px;
+      }
+     .useful-link li > a {
+         color: white;
+         text-decoration: none;
+         margin-bottom: 32px;
+         font-size: 15px;
+         padding: auto;
+     }
+     .useful-link li > a:hover{
+         color: chartreuse;
+         background-color: #9867C5;
+         padding: 0;
+     }
